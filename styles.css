@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Cezanne DB';
-    src: url('fonts/fot-newcezanne_pro_db-webfont.woff2') format('woff2'),
-         url('fonts/fot-newcezanne_pro_db-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 * {
     margin: 0;
