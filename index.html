@@ -9,54 +9,22 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Plataformas Moviles</title>
-    
   </head>
+  
   <body>
     <div class="content">
       <h1 class="title">Santacruz Lucas</h1>
 
       <ul id="container" class="container"></ul>
     </div>
-
-    <script>
-      let container = document.getElementById("container");
-      const apiLink =
-        "https://api.github.com/repos/lincNx/plataformas-moviles-entregas/git/trees/master";
-      const rawLink =
-        "https://raw.githubusercontent.com/lincNx/plataformas-moviles-entregas/master/";
-
-      const getTasks = async () => {
-        let res = await axios.get(apiLink);
-        const tree = res.data.tree;
-
-        if (!tree) return;
-
-        tree.forEach(async (dir) => {
-          if (dir.type === "tree" && dir.path.startsWith("tp-")) {
-            let readmeLink = rawLink + `${dir.path}/README.md`;
-            let readmeResponse = await axios.get(readmeLink);
-
-            if (!readmeResponse) return;
-
-            const readmeContent = readmeResponse.data;
-
-            let li = document.createElement("li");
-            let a = document.createElement("a");
-
-            let title = readmeContent.split("\n").shift().replace("# ", "");
-
-            let date = readmeContent.split("\n")[2].replace("# ", "");
-
-            a.innerHTML += `${dir.path.toUpperCase()} | ${title} | ${date}`;
-            a.href = `./${dir.path}`;
-
-            li.appendChild(a);
-            container.appendChild(li);
-          }
-        });
-      };
-
-      getTasks();
-    </script>
+    <div class="contenedor">
+            <div class="caja">
+                <h1>TRABAJOS</h1>
+                <div class="columna">
+                    <a href="tp-1/index.html">Actividad 1</a>
+                    <p>COMING SOON</p>
+                </div>
+               
+  
   </body>
 </html>
