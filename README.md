@@ -6,3 +6,6 @@
  
  ## Pagina Web:
  https://plataformas-moviles.vercel.app/clases/
+
+
+<img src="https://imgur.com/szgZ8jY" alt="drawing" width="200" />
