@@ -66,7 +66,7 @@ body {
     color: #fffffff6;
     text-shadow: 3px 2px 2px rgb(251, 12, 12), 0px -1px 3px rgba(255, 255, 255, 0.986),-3px 0px 2px rgba(61, 248, 77, 0.952),-3px 0px 2px rgba(61, 248, 77, 0.952);
     animation: myAnim 1s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite alternate forwards;
-    align: center;
+    text-align: center;
 }
 
 .title::after {
@@ -76,7 +76,6 @@ body {
 
 .content {
     margin: 2em 8em;
-    list-style: hiragana outside;
 }
 
 .container {
@@ -89,6 +88,8 @@ body {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid white;
+    text-align: center;
+
 }
 
 .container li a {
@@ -105,52 +106,4 @@ body {
 }
 
 
-@media (max-width: 575.98px) { 
-    .content {
-        margin: 1em 3em;
-    }
 
-    .title {
-        font-size: 1.75rem;
-    }
-    
-    .title::after {
-        font-size: 1rem;
-        content: "- Trabajos"
-    }
-
-    .container {
-        font-size: 1.25rem;
-        margin: .75em 2em;
-    }
-
-    .container li:hover a::after {
-        font-size: 1rem;
-        content: " <<<";
-    }
-}
-
-@media (max-width: 730px) and (min-width: 575.98px) { 
-    .content {
-        margin: 2em 4em;
-    }
-
-    .title {
-        font-size: 2.5rem;
-    }
-    
-    .title::after {
-        font-size: 1.50rem;
-        content: "- Trabajos"
-    }
-
-    .container {
-        font-size: 1.75rem;
-        margin: 1em 2em;
-    }
-
-    .container li:hover a::after {
-        font-size: 1.50rem;
-        content: " <<<";
-    }
-}
