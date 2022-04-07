@@ -8,4 +8,4 @@
  https://plataformas-moviles.vercel.app/clases/
 
 
-<img src="https://imgur.com/szgZ8jY.gif" alt="drawing" width="200" />
+<img src="https://imgur.com/szgZ8jY.gif" alt="drawing" width="1000" />
