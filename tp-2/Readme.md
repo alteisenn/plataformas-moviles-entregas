@@ -1,5 +1,5 @@
 
-## TP2 - Selectores CSS
+# TP2 - Selectores CSS
 Segundo Trabajo Práctico, donde ponemos en marcha la implementación de **selectores** en CSS.
 
 ## Fecha de Entrega
