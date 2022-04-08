@@ -7,5 +7,5 @@
  ## Pagina Web:
  https://plataformas-moviles.vercel.app/clases/
 
-## Santacruz Lucas
+## 
 <img src="https://imgur.com/2f5JdEc.gif" alt="drawing" width="300" />
