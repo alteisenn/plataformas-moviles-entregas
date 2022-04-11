@@ -492,8 +492,8 @@ h2 {
 
   20% {
     font-weight: 500;
-    color: #fff;
-    filter: blur(0);
+    color: rgb(233, 130, 34);
+    filter: blur(2px);
   }
 
   50% {
@@ -505,12 +505,12 @@ h2 {
   60% {
     font-weight: 700;
     color: #fff;
-    filter: blur(0);
+    filter: blur(1px);
   }
 
   90% {
     font-weight: 500;
-    color: #14ff6e;
+    color: #39e49d;
     filter: blur(6px);
   }
 }
@@ -537,7 +537,7 @@ h2 {
   color: #FFFFFF;
   list-style: none;
   margin: auto;
-  background-color: rgba(78, 75, 75, 0.39);
+  background-color: rgba(128, 128, 128, 0.39);
   padding: 10px;
   border-radius: 5px;
   border: 1px solid white;
