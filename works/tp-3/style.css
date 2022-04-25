@@ -114,7 +114,7 @@ body
 
  /*9- Definir una media query que tenga 3 operadores lógicos.*/
 
- @media screen and (width: 300px) and (height: 800px) and (orientation: portrait)
+ @media screen and (width: 600px) and (height: 800px) and (orientation: portrait)
  {
    body
      { 
