@@ -73,7 +73,7 @@ body
 
 
  /*6- En dispositivos que no pueden mostrar colores, ocultar el elemento #wikipedia-logo.*/
- @media  not (color) 
+ @media (monochrome) 
  {
    #wikipedia-logo
     {
