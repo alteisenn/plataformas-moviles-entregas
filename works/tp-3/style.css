@@ -1,0 +1,126 @@
+
+/*1-En dispositivos con más de 400px de ancho, el tamaño del texto de todos los <p> debe ser 1.3em.*/
+@media (min-width: 400px)
+    {       
+      p  
+        {
+            font-size:1.3em;    
+        }
+    }
+
+/*2-En dispositivos de menos de 300px de ancho, el título <h1> se tiene que mostrar centrado.*/
+
+@media (max-width: 300px)
+{
+h1
+{
+    text-align:center;
+ }
+}
+
+/*3-Para el elemento <div class="container">, definir el ancho del elemento de acuerdo al ancho del dispositivo:
+   - Para dispositivos de menos de 200px de ancho, el elemento tiene un width de 90%.
+   - Para dispositivos de entre 200px y 400px, el elemento tiene un width de 80%.
+   - En dispositivos con más de 400px de ancho, el elemento tiene un width exacto de 390px. */
+
+ @media (max-width:200px) 
+   {
+    .container {
+        width: 90%;
+    }
+   }
+
+
+ @media (min-width: 200px) and (max-width: 400px)
+    {
+    .container
+         {
+          width: 80%;
+         }
+    }
+
+ @media (min-width: 400px)
+    {
+      .container 
+        {
+          width: 390px;
+        }
+    }
+/*4-Al elemento <div class="container"> del punto anterior mostrarlo centrado, pero sólo cuando se muestra en pantallas.*/
+@media screen
+{
+    .container 
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*5-El <body> del documento tiene que tener fondo color blanco cuando se vaya a imprimir, pero color #ddccaa en el resto de dispositivos.*/
+
+body
+    {
+      background-color: #ddccaa ;  
+    }
+
+@media print 
+ {
+ body
+     {
+      background-color:white;    
+     }
+ }
+
+
+ /*6- En dispositivos que no pueden mostrar colores, ocultar el elemento #wikipedia-logo.*/
+ @media  not (color) 
+ {
+   #wikipedia-logo
+    {
+         display: none;
+    }
+ }
+
+/*7- En dispositivos que acepten “hover”, cambiar el color de fondo del elemento <blockquote> a #ccddaa. Agregar un comentario en el CSS con los navegadores en los que funciona y en los que no funciona esta media query.*/
+@media (hover: hover) 
+{
+  blockquote 
+  {
+      background-color: #ccddaa;
+  }
+}
+ /*8- En dispositivos con relación de aspecto cuadrada (exactamente el mismo ancho que alto), aplicar la siguiente regla:
+    
+    figure {
+            width: 80%;
+            margin: 5px auto;
+            padding: 5px;
+            border: 1px solid #999;
+            border-radius: 10px;
+            }
+ */
+
+ @media (aspect-ratio: 1/1) 
+ {
+  figure
+   {
+      width: 80%;
+      margin: 5px auto;
+      padding: 5px;
+      border: 1px solid #999;
+      border-radius: 10px;
+    }
+ }
+
+ /*9- Definir una media query que tenga 3 operadores lógicos.*/
+
+ @media screen and (width: 300px) and (height: 800px) and (orientation: portrait)
+ {
+   body
+     { 
+        background-image: url('https://imgur.com/4z50LWb.png');
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+  }
