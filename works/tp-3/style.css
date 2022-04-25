@@ -123,4 +123,9 @@ body
         background-attachment: fixed;
         background-size: cover;
       }
+     
+     .container
+     {
+      color:white;
+     }
   }
