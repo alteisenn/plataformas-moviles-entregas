@@ -1,0 +1,12 @@
+body {
+    font-family:Century Gothic;
+    background:url('https://imgur.com/LFJhUA4.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+  }
+
+
