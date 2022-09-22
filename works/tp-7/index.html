@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <script src="https://kit.fontawesome.com/518b28d714.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../../media/favicon.ico"/>
+    <title>Plataformas Moviles-PokeAPI</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <a  href="index.html"><img src="./images/poke.png" alt="pokemon"></a>
+            <form action="" class="search">
+                <input type="text" name="input" value="" id="search-poke" placeholder="Search your pokemon!" autocomplete="off">
+                <input type="submit" value="Search!" id="submit" >
+                <ul class="list" id="list">
+                </ul>
+            </form>
+            <a href="#title" id="back-btn"class="back-btn"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </header>
+    <section id="pokedex"></section>
+    <!-- pop up model-->
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <div class="modal-header">
+                <img id="modal-img" alt="pokemon">
+                <h1 class="name" id="name">some text</h1>
+                <div class="types"></div>
+                <button class="btn-close" id="btn-close">&times;</button>
+            </div>
+            <div id="modal-stats"></div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="footer-container">
+            <p>a</p>
+        </div>
+    </footer>
+  
+</body>
+<script src="./js/script.js" type="module"></script>
+</html>
